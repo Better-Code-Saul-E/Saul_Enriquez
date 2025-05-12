@@ -1,5 +1,5 @@
-let currentSlide = [1, 1, 1, 1, 1, 1, 1]; 
-let slideClasses = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6","slides7"];
+let currentSlide = [1, 1, 1, 1, 1, 1, 1, 1]; 
+let slideClasses = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6","slides7", "slides8"];
 
 displaySlide(1, 0);
 displaySlide(1, 1);
@@ -8,6 +8,7 @@ displaySlide(1, 3);
 displaySlide(1, 4);
 displaySlide(1, 5);
 displaySlide(1, 6);
+displaySlide(1, 7);
 
 function changeSlide(step, slideshowIndex) {
     displaySlide(currentSlide[slideshowIndex] += step, slideshowIndex);

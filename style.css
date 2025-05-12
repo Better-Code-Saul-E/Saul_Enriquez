@@ -212,7 +212,7 @@ section li {
 
 .slideshow-buttons {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 0;
     width: 100%;
     transform: translateY(-50%);
@@ -360,7 +360,7 @@ MEDIA QUERIES
     }
 
     section {
-        width: 95;
+        width: 90%;
         margin-bottom: 6%;
     }
 
@@ -443,7 +443,15 @@ MEDIA QUERIES
 }
 
 /* larger tablets, laptops and desktops. */
-@media all and (min-width: 769px) and (max-width: 992px) {}
+@media all and (min-width: 769px) and (max-width: 992px) 
+{
+    section {
+        width: 90%;
+    }
+    .slideshow-buttons {
+        top: 30%;
+    }
+}
 
 /* larger desktops. */
 @media all and (min-width: 1200px) {}
