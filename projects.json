@@ -1,0 +1,127 @@
+[
+  {
+    "title": "Weather App (CSharp)",
+    "description": "A dynamic WPF application providing real time weather conditions and a 3-day forecast for any city. Designed to be simple, fast, and easy to read, showing only the essentials.",
+    "career": "back-end",
+    "languages": ["CSharp"],
+    "tech": ["CSharp", "DotNet", "WPF", "VisualStudio", "OpenWeatherMapAPI", "ip-api"],
+    "images": [
+      "weatherAppCSharp.png",
+      "weatherAppCSharp_1.png",
+      "weatherAppCSharp_2.png",
+      "weatherAppCSharp_3.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/CSharpWeatherApp",
+    "liveSite": null,
+    "hero": false
+  },
+  {
+    "title": "Wild Card",
+    "description": "A CSharp console app featuring three single-player card games: Same or Different?, Higher or Lower?, and Highest Match. Emphasizes abstraction and flexibility with modular reusable code.",
+    "career": "game-development",
+    "languages": ["CSharp"],
+    "tech": ["CSharp", "DotNet", "VisualStudio", "VisualStudioCode"],
+    "images": [
+      "WildCard_1.png",
+      "WildCard_2.png",
+      "WildCard_3.png",
+      "WildCard_4.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/WildCard",
+    "liveSite": null,
+    "hero": true
+  },
+  {
+    "title": "Bauhaus Maker",
+    "description": "Inspired by Bauhaus design and posters that use bold geometric shapes to create simple and mesmerizing visuals.",
+    "career": "front-end",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML5", "CSS3", "JavaScript", "VisualStudioCode"],
+    "images": [
+      "BauhausMaker_1.png",
+      "BauhausMaker_2.png",
+      "BauhausMaker_3.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/BauhausMaker",
+    "liveSite": "https://better-code-saul-e.github.io/BauhausMaker/",
+    "hero": false
+  },
+  {
+    "title": "Inspire Me",
+    "description": "A multilingual quote generator using the Quotable API and MyMemory API to provide inspirational quotes with instant translations.",
+    "career": "front-end",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML5", "CSS3", "JavaScript", "VisualStudioCode", "QuotableAPI", "MyMemoryAPI"],
+    "images": [
+      "InspireMe_1.png",
+      "InspireMe_2.png",
+      "InspireMe_3.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/InspireMe",
+    "liveSite": null,
+    "hero": false
+  },
+  {
+    "title": "Whispers of the Garden",
+    "description": "A narrative-driven game where you restore a mythical garden by interacting with spirits that provide guidance and wisdom.",
+    "career": "game-development",
+    "languages": ["CSharp"],
+    "tech": ["CSharp", "DotNet", "VisualStudio"],
+    "images": [
+      "WhispersOfTheGarden_1.png",
+      "WhispersOfTheGarden_2.png",
+      "WhispersOfTheGarden_3.png",
+      "WhispersOfTheGarden_4.png",
+      "WhispersOfTheGarden_5.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/Whispers-Of-The-Garden",
+    "liveSite": null,
+    "hero": false
+  },
+  {
+    "title": "TypeTalk",
+    "description": "A simple tool for typing, tracking character and word count, and converting text to speech with multiple voice options.",
+    "career": "front-end",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML5", "CSS3", "JavaScript", "VisualStudioCode"],
+    "images": [
+      "TypeTalk_1.png",
+      "TypeTalk_2.png",
+      "TypeTalk_3.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/TypeTalk",
+    "liveSite": "https://better-code-saul-e.github.io/TypeTalk/",
+    "hero": true
+  },
+  {
+    "title": "Weather App (JavaScript)",
+    "description": "A simple weather app showing real-time weather updates based on your location or a searched city, using the OpenWeatherMapAPI.",
+    "career": "front-end",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "tech": ["HTML5", "CSS3", "JavaScript", "OpenWeatherMapAPI", "VisualStudioCode"],
+    "images": [
+      "WeatherApp_1.png",
+      "WeatherApp_2.png",
+      "WeatherApp_3.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/WeatherApp",
+    "liveSite": "https://better-code-saul-e.github.io/WeatherApp/",
+    "hero": false
+  },
+  {
+    "title": "Geographic Exploration",
+    "description": "A console game where players explore a dynamically generated map filled with unique geographic features and detailed descriptions.",
+    "career": "game-development",
+    "languages": ["CSharp"],
+    "tech": ["CSharp", "DotNet", "VisualStudioCode"],
+    "images": [
+      "GeographicExploration_1.png",
+      "GeographicExploration_2.png",
+      "GeographicExploration_3.png",
+      "GeographicExploration_4.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/Geographic-Exploration",
+    "liveSite": null,
+    "hero": false
+  }
+]

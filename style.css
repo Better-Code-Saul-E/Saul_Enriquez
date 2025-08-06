@@ -3,14 +3,10 @@
     src: url("fonts/bauhaus-93/Bauhaus93Regular.ttf");
 }
 
-@font-face {
-    font-family: "ArialRounded";
-    src: url("fonts/arial-mt/ARLRDBD.TTF");
-}
 
 @font-face {
     font-family: "CourierPrime";
-    src: url(fonts/Courier-Prime/CourierPrime.ttf);
+    src: url("fonts/Courier-Prime/CourierPrime.ttf");
 }
 
 * {
@@ -18,7 +14,7 @@
     padding: 0px;
     --header-font: "Bauhaus93";
     --link-font: "CourierPrime";
-    --text-font: "ArialRounded";
+    --text-font: "Arial";
 }
 
 html {
@@ -35,7 +31,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+#logo,
+#header-links {
+    
     font-family: var(--header-font);
 }
 
@@ -82,7 +81,7 @@ label {
 }
 
 p {
-    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-size: clamp(1rem, 1.075 , 1.125rem);
     /* 16px - 18px */
     line-height: 1.6;
     font-family: var(--text-font);
@@ -114,7 +113,6 @@ header {
 #header-links a {
     text-decoration: none;
     color: black;
-    font-family: var(--header-font);
     padding: 0 2%;
 }
 
@@ -168,6 +166,44 @@ main {
     margin-top: 2em;
 }
 
+
+
+
+
+/* ==========
+   projects
+   ========== */
+
+#portfolio-showcase {
+    width: 80%;
+    margin: 0 auto 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* 1500 px most*/
+.project {
+    max-height: 500px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+}
+.project-description {
+    width: 60%;
+}
+
+.project-description p {
+    margin-top: .5%;
+    padding-right: 30px;
+}
+.project-title {
+    width: 100%;
+}
+
+
+
 section {
     width: 80%;
     margin: 0 auto 3%;
@@ -192,12 +228,15 @@ section li {
 }
 
 .section-links {
-    width: 100%;
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+.section-links .links {
+  display: flex;
+  gap: 1rem;
+}
 .slideshow-container {
     width: 40%;
     overflow: hidden;
@@ -256,7 +295,9 @@ section li {
     width: 30px;
 }
 
-/* === Contact Page ===*/
+/* ============
+   Contact Page
+   ============ */
 #contact-section {
     padding: 2% 0;
     text-align: center;
