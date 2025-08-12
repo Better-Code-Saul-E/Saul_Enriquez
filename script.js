@@ -2,18 +2,18 @@ let currentSlide = [];
 let slideClasses = [];
 
 function changeSlide(step, slideshowIndex) {
-    displaySlide(currentSlide[slideshowIndex] += step, slideshowIndex);
+  displaySlide(currentSlide[slideshowIndex] += step, slideshowIndex);
 }
 
 function displaySlide(slideNumber, slideshowIndex) {
-    let slides = document.getElementsByClassName(slideClasses[slideshowIndex]);
-    if (slides.length === 0) return;
-    if (slideNumber > slides.length) { currentSlide[slideshowIndex] = 1; }
-    if (slideNumber < 1) { currentSlide[slideshowIndex] = slides.length; }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[currentSlide[slideshowIndex] - 1].style.display = "block";
+  let slides = document.getElementsByClassName(slideClasses[slideshowIndex]);
+  if (slides.length === 0) return;
+  if (slideNumber > slides.length) { currentSlide[slideshowIndex] = 1; }
+  if (slideNumber < 1) { currentSlide[slideshowIndex] = slides.length; }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[currentSlide[slideshowIndex] - 1].style.display = "block";
 }
 
 function checkImageExists(path) {
@@ -30,7 +30,7 @@ async function getImagePath(baseName) {
 
   for (const ext of extensions) {
     const path = `icons/${baseName}${ext}`;
-    const exists = await checkImageExists(path); 
+    const exists = await checkImageExists(path);
     if (exists) {
       return path;
     }
@@ -49,10 +49,10 @@ async function createProjectArticle(project, index, showHero) {
   const article = document.createElement('article');
   article.classList.add('project');
 
-    const imagePathPromises = project.tech.map(icon => getImagePath(icon));
+  const imagePathPromises = project.tech.map(icon => getImagePath(icon));
   const resolvedImagePaths = await Promise.all(imagePathPromises);
 
-    const techIconsHTML = resolvedImagePaths.map((path, i) => 
+  const techIconsHTML = resolvedImagePaths.map((path, i) =>
     `<img src="${path}" alt="${project.tech[i]}" title="${project.tech[i]}">`
   ).join('');
 
@@ -67,7 +67,7 @@ async function createProjectArticle(project, index, showHero) {
       <div class="section-links">
         <h6>Links</h6>
         <div class="links">
-        ${showHero ? `<a class="portfolio-link" href="portfolio.html">See All Projects</a>`: ""}
+        ${showHero ? `<a class="portfolio-link" href="portfolio.html">See All Projects</a>` : ""}
         <a class="portfolio-link" href="${project.github}" target="_blank">GitHub Repository</a>
         ${project.liveSite ? `<a class="portfolio-link" href="${project.liveSite}" target="_blank">Live Site</a>` : ''}
         </div>
@@ -76,9 +76,9 @@ async function createProjectArticle(project, index, showHero) {
   `;
 
   // Create slideshow container HTML
-const slidesHTML = project.images.map((img, i) => `
+  const slidesHTML = project.images.map((img, i) => `
     <div class="${slideClass}" style="display: ${i === 0 ? 'block' : 'none'};">
-      <img src="images/${img}" alt="${project.title} screenshot ${i+1}">
+      <img src="images/${img}" alt="${project.title} screenshot ${i + 1}">
     </div>
   `).join('');
 
@@ -119,7 +119,7 @@ async function loadProjects(showHeroOnly = false) {
     const container = document.getElementById('portfolio-showcase');
     container.innerHTML = '';
 
-      for (const [i, project] of filtered.entries()) {
+    for (const [i, project] of filtered.entries()) {
       const projectArticle = await createProjectArticle(project, i, showHeroOnly);
       container.appendChild(projectArticle);
     }
