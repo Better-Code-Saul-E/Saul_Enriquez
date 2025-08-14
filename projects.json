@@ -1,5 +1,32 @@
 [
   {
+    "title": "Event Ledger",
+    "description": "An interactive web application designed to help users plan and budget for events. Easily select venues, A/V equipment, and meal plans, and see the total cost update in real-time.",
+    "career": "front-end",
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tech": [
+      "React",
+      "Redux",
+      "Vite",
+      "CSS3",
+      "JavaScript",
+      "VisualStudioCode"
+    ],
+    "images": [
+      "EventLedger2.png",
+      "EventLedger1.png",
+      "EventLedger3.png",
+      "EventLedger4.png"
+    ],
+    "github": "https://github.com/Better-Code-Saul-E/Event_Ledger",
+    "liveSite": null,
+    "hero": true
+  },
+  {
     "title": "ATLAS - Country Data Browser",
     "description": "A clean and responsive web application that allows users to explore countries around the world, built with vanilla HTML, CSS, and JavaScript. Demonstrates proficiency in interacting with a live API, handling asynchronous operations, and dynamic DOM manipulation.",
     "career": "front-end",
@@ -22,7 +49,7 @@
     ],
     "github": "https://github.com/Better-Code-Saul-E/Atlas",
     "liveSite": "https://better-code-saul-e.github.io/Atlas/index.html",
-    "hero": false
+    "hero": true
   },
   {
     "title": "Weather App (CSharp)",
@@ -191,7 +218,7 @@
     ],
     "github": "https://github.com/Better-Code-Saul-E/TypeTalk",
     "liveSite": "https://better-code-saul-e.github.io/TypeTalk/",
-    "hero": true
+    "hero": false
   },
   {
     "title": "Geographic Exploration",
